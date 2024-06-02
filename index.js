@@ -1,4 +1,4 @@
-const rp = require('request-promise-native');
+const fetch = require('node-fetch');
 const fs = require('fs-extra');
 
 const config = fs.readJSONSync('config.json');
@@ -22,11 +22,11 @@ const sendWebhook = (title, permalink, time) => {
       }],
     },
   };
-  rp(payload).catch(err => console.log(err));
+  fetch(payload).catch(err => console.log(err));
 };
 
 const scrape = async () => {
-  rp(config.subredditURL).then((response) => {
+  fetch(config.subredditURL).then((response) => {
     const json = JSON.parse(response);
     const latestPost = json.data.children[0].data.url;
     if (lastPost !== latestPost) {
