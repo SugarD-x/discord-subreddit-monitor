@@ -1,3 +1,5 @@
+## This is a fork of the original project by Code42Cate, which is no longer online.
+
 # Discord Subreddit Monitor
 This script monitors a subreddit for new posts and sends them as embeds to a Discord webhook
 ## Getting Started
