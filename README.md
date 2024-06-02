@@ -20,8 +20,7 @@ Contributing is more than welcome!
 1. Fork the repository
 2. Create a new branch 
 3. Implement/fix whatever you want
-4. Make sure to use Eslint!
-5. Open a pull request:)
+4. Open a pull request:)
 
 ## Planned additions:
 None, yet
